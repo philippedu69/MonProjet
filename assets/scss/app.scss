@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'scriptinaregular';
+    src: url('./../fonts/scriptina-webfont.ttf') format('truetype');    
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'papersignregular';
+    src: url('./../fonts/Paper-Sign.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'drifttype';
+    src: url('./../fonts/Drifttype.ttf') format('truetype');
+}
+// customize some Bootstrap variables
+
+$primary: darken(#092e4e, 20%);
+$body-bg: rgb(224, 220, 220);
+
+// the ~ allows you to reference things in node_modules
+@import "~bootstrap/scss/bootstrap";
+@import "_navbar";
+@import "_footer";
+@import "page/realisation";
+
+body, html {
+    height: 100%;
+}
+
+.container {
+    min-height:100%;
+    margin:0 auto;
+    position:relative;
+    // display: flex;
+    // justify-content: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'drifttype';
+    margin-top: 2rem;
+}
+
+.subtitle {
+    font-family: 'papersignregular';
+    font-size: 2rem;
+}

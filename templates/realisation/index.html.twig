@@ -1,0 +1,24 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Réalisations{% endblock %}
+
+{% block body %}
+  <div class='container'>
+    <div class='title'>
+      <h1>Voici mes réalisations</h1>
+    </div>
+    {% for realisation in realisations %}
+      <div class='card_realisation'>
+        <img class='image' src="/images/{{ realisation.furnitureName }}.JPG" alt="image {{ realisation.furnitureName }}">
+        <div class='card_body'>
+          <h4><strong>{{ realisation.furnitureName }}</strong></h4>
+          <p>{{ realisation.description }}</p>
+        </div>
+      </div>
+    {% else %}
+      Rien pour le moment!    
+      <a href={{ path('homepage') }}>retour à l'accueil</a>
+    {% endfor %}
+   
+ </div> 
+{% endblock %}
