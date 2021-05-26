@@ -14,6 +14,16 @@
     font-family: 'drifttype';
     src: url('./../fonts/Drifttype.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'someone';
+    src: url('./../fonts/Someone.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'bleeding';
+    src: url('./../fonts/Bleeding_Cowboys.ttf') format('truetype');
+}
 // customize some Bootstrap variables
 
 $primary: darken(#092e4e, 20%);
